@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Navodaya Vidya Mandir School</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <div class="top-bar">
+    <div class="top-bar-contact">
+      <span>📞 +91 9639744752</span>
+      <span>📧 xyz0@gmail.com</span>
+    </div>
+    <div>Chandausi, UP, India</div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <div class="logo-placeholder">NVM</div>
+        <div class="logo-text">
+          <h1>Navodaya Vidya Mandir</h1>
+          <p>You Belong Here</p>
+        </div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="facts.html">Our Facts</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="hero" style="height: 40vh; min-height: 250px; background: linear-gradient(rgba(13, 30, 54, 0.9), rgba(13, 30, 54, 0.9)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1500&q=80') center/cover;">
+    <h2>Visual Gallery</h2>
+    <p>A Glimpse into Life at Navodaya Vidya Mandir</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section>
+    <div class="section-title">
+      <h3>Campus Memories</h3>
+      <p>Captured moments showcasing our academic, athletic, and festive life.</p>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+      
+      <!-- Box 1 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Students in Classroom">
+        <div class="gallery-overlay">
+          <p>Active Learning</p>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80" alt="Science Laboratory">
+        <div class="gallery-overlay">
+          <p>Modern Labs</p>
+        </div>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="E-Learning Class">
+        <div class="gallery-overlay">
+          <p>Digital Smart Classrooms</p>
+        </div>
+      </div>
+
+      <!-- Box 4 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80" alt="Yoga & Sports">
+        <div class="gallery-overlay">
+          <p>Sports & Yoga Facilities</p>
+        </div>
+      </div>
+
+      <!-- Box 5 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80" alt="Library">
+        <div class="gallery-overlay">
+          <p>Extensive Library</p>
+        </div>
+      </div>
+
+      <!-- Box 6 -->
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1516534775068-ba3e84589d90?auto=format&fit=crop&w=800&q=80" alt="Co-curricular activity">
+        <div class="gallery-overlay">
+          <p>Creative Arts & Music</p>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px;">
+      <p style="color: var(--text-muted); font-size: 0.95rem;">Note: You can easily swap these images out with your own files by replacing the URLs inside the image sources in <code>gallery.html</code>.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>About NVM</h4>
+        <p>Established in 2011, Navodaya Vidya Mandir School delivers excellent basic education (Primary to Middle School, UP Board) in Hindi & English mediums in Chandausi.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us & History</a></li>
+          <li><a href="facts.html">Facts & Stats</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="admission.html">Admissions Form</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p>📍 Pragati Vihar, Moradabad Road, Chandausi, UP</p>
+        <p style="margin-top: 10px;">📞 Phone: +91 9639744752</p>
+        <p>📧 Email: xyz0@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Navodaya Vidya Mandir School. All Rights Reserved. Slogan: "You Belong Here". Built classically.</p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
