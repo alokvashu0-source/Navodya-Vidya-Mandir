@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions | Navodaya Vidya Mandir School</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <div class="top-bar">
+    <div class="top-bar-contact">
+      <span>📞 +91 9639744752</span>
+      <span>📧 xyz0@gmail.com</span>
+    </div>
+    <div>Chandausi, UP, India</div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <div class="logo-placeholder">NVM</div>
+        <div class="logo-text">
+          <h1>Navodaya Vidya Mandir</h1>
+          <p>You Belong Here</p>
+        </div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="facts.html">Our Facts</a></li>
+        <li><a href="admission.html" class="active">Admissions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="hero" style="height: 40vh; min-height: 250px; background: linear-gradient(rgba(13, 30, 54, 0.9), rgba(13, 30, 54, 0.9)), url('https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1500&q=80') center/cover;">
+    <h2>Student Admission</h2>
+    <p>Take the first step towards a bright academic pathway.</p>
+  </section>
+
+  <!-- Admission Form Section -->
+  <section>
+    <div class="two-column">
+      <div class="about-content">
+        <h4>Admission Guidelines</h4>
+        <p>Navodaya Vidya Mandir welcomes admission requests for classes Playgroup/Nursery up to Class 8th. We look forward to evaluating candidates based on general capability interviews and interactions.</p>
+        <p><strong>Documents required during final physical verification:</strong></p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: var(--text-muted); margin-bottom: 20px;">
+          <li>Valid birth certificate of the student.</li>
+          <li>Transfer Certificate (TC) from the previous recognized school (if applicable).</li>
+          <li>Aadhaar Card of the Student & Parents.</li>
+          <li>Passport size photos of the student (4 copies).</li>
+        </ul>
+        <p>Please complete this online registration form. Our office representative will reach out to you within 2 working days via phone to schedule an interactive baseline session.</p>
+      </div>
+
+      <!-- Online Form -->
+      <div style="background-color: var(--bg-white); padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 4px;">
+        <h4 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--primary); margin-bottom: 25px;">Online Admission Query</h4>
+        
+        <form action="#" method="POST" onsubmit="alert('Thank you for registering! We will contact you shortly.'); return false;">
+          
+          <div class="form-group">
+            <label for="student-name">Student Full Name *</label>
+            <input type="text" id="student-name" required placeholder="Enter student's name">
+          </div>
+
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="dob">Date of Birth *</label>
+              <input type="date" id="dob" required>
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender *</label>
+              <select id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="class">Class Seeking Admission *</label>
+              <select id="class" required>
+                <option value="">Select Class</option>
+                <option value="nursery">Nursery / Playgroup</option>
+                <option value="lkg-ukg">LKG / UKG</option>
+                <option value="1">Class 1</option>
+                <option value="2">Class 2</option>
+                <option value="3">Class 3</option>
+                <option value="4">Class 4</option>
+                <option value="5">Class 5</option>
+                <option value="6">Class 6</option>
+                <option value="7">Class 7</option>
+                <option value="8">Class 8</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="medium">Medium Preferred *</label>
+              <select id="medium" required>
+                <option value="">Select Medium</option>
+                <option value="english">English Medium</option>
+                <option value="hindi">Hindi Medium</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="parent-name">Parent / Guardian Name *</label>
+            <input type="text" id="parent-name" required placeholder="Enter Father's or Mother's Name">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Active Mobile Number *</label>
+            <input type="tel" id="phone" required placeholder="e.g. 9639744752" pattern="[0-9]{10}">
+          </div>
+
+          <button type="submit" class="btn btn-dark" style="width: 100%; margin-top: 10px;">Submit Query Form</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>About NVM</h4>
+        <p>Established in 2011, Navodaya Vidya Mandir School delivers excellent basic education (Primary to Middle School, UP Board) in Hindi & English mediums in Chandausi.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us & History</a></li>
+          <li><a href="facts.html">Facts & Stats</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="admission.html">Admissions Form</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p>📍 Pragati Vihar, Moradabad Road, Chandausi, UP</p>
+        <p style="margin-top: 10px;">📞 Phone: +91 9639744752</p>
+        <p>📧 Email: xyz0@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Navodaya Vidya Mandir School. All Rights Reserved. Slogan: "You Belong Here". Built classically.</p>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
