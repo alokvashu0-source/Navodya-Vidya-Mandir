@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Navodaya Vidya Mandir School</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <div class="top-bar">
+    <div class="top-bar-contact">
+      <span>📞 +91 9639744752</span>
+      <span>📧 xyz0@gmail.com</span>
+    </div>
+    <div>Chandausi, UP, India</div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <!-- REPLACE placeholder class with an <img> tag when you have your logo -->
+        <div class="logo-placeholder">NVM</div>
+        <div class="logo-text">
+          <h1>Navodaya Vidya Mandir</h1>
+          <p>You Belong Here</p>
+        </div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="facts.html">Our Facts</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Navodaya Vidya Mandir School</h2>
+    <p>Inspiring Minds, Shaping Futures</p>
+    <div>
+      <a href="admission.html" class="btn">Apply Online</a>
+      <a href="about.html" class="btn btn-dark" style="margin-left: 10px;">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Overview Features -->
+  <section>
+    <div class="section-title">
+      <h3>Welcome To Our Campus</h3>
+      <p>Providing high-quality UP Board education in both Hindi and English mediums.</p>
+    </div>
+    
+    <div class="overview-grid">
+      <div class="overview-card">
+        <h4>Dual Medium</h4>
+        <p>Offering instruction in both Hindi and English mediums up to Class 8th, ensuring a tailored approach for every child.</p>
+      </div>
+      <div class="overview-card">
+        <h4>Experienced Staff</h4>
+        <p>With over 100+ dedicated and highly experienced educators, we maintain a strong focus on structured growth.</p>
+      </div>
+      <div class="overview-card">
+        <h4>Balanced Curriculum</h4>
+        <p>A structured blend of scholastic training and basic values based on the Uttar Pradesh State Board curriculum.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brief Welcome & History Section -->
+  <section style="background-color: var(--bg-white);">
+    <div class="two-column">
+      <div>
+        <!-- REPLACE source with your custom school photo -->
+        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80" alt="School Classroom" style="border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+      </div>
+      <div class="about-content">
+        <h4>Established with a Vision (Est. 2011)</h4>
+        <p>Since our establishment in 2011, Navodaya Vidya Mandir School has served Chandausi with high academic standards. We work diligently to prepare young learners up to 8th standard to transition confidently into higher education.</p>
+        <p>Under the motto "You Belong Here", we foster an inclusive community where students feel safe to explore their true potentials across intellectual, moral, and physical platforms.</p>
+        <a href="about.html" class="btn btn-dark">Read Our Full History</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>About NVM</h4>
+        <p>Established in 2011, Navodaya Vidya Mandir School delivers excellent basic education (Primary to Middle School, UP Board) in Hindi & English mediums in Chandausi.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us & History</a></li>
+          <li><a href="facts.html">Facts & Stats</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="admission.html">Admissions Form</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p>📍 Pragati Vihar, Moradabad Road, Chandausi, UP</p>
+        <p style="margin-top: 10px;">📞 Phone: +91 9639744752</p>
+        <p>📧 Email: xyz0@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Navodaya Vidya Mandir School. All Rights Reserved. Slogan: "You Belong Here". Built classically.</p>
+    </div>
+  </footer>
+
+  <!-- Script for Mobile Responsive Menu -->
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+                                                  </html>
